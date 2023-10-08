@@ -17,7 +17,7 @@ The release manager must:
 Whenever a new Kubernetes minor version is released, our kubernetes-csi CI jobs
 must be updated.
 
-[Our CI jobs](https://k8s-testgrid.appspot.com/sig-storage-csi-ci) have the
+[Our CI jobs](https://testgrid.k8s.io/sig-storage-csi-ci) have the
 naming convention `<hostpath-deployment-version>-on-<kubernetes-version>`.
 
 1. Jobs should be actively monitored to find and fix failures in sidecars and
@@ -90,7 +90,7 @@ naming convention `<hostpath-deployment-version>-on-<kubernetes-version>`.
 1. Submit a PR for README changes, in particular, Compatibility, Feature status,
    and any other sections that may need updating.
 1. Check that all [canary CI
-  jobs](https://k8s-testgrid.appspot.com/sig-storage-csi-ci) are passing,
+  jobs](https://testgrid.k8s.io/sig-storage-csi-ci) are passing,
   and that test coverage is adequate for the changes that are going into the release.
 1. Make sure that no new PRs have merged in the meantime, and no PRs are in
    flight and soon to be merged.
@@ -118,7 +118,7 @@ naming convention `<hostpath-deployment-version>-on-<kubernetes-version>`.
 
 The following jobs are triggered after tagging to produce the corresponding
 image(s):
-https://k8s-testgrid.appspot.com/sig-storage-image-build
+https://testgrid.k8s.io/sig-storage-image-build
 
 Clicking on a failed build job opens that job in https://prow.k8s.io. Next to
 the job title is a rerun icon (circle with arrow). Clicking it opens a popup
